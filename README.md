@@ -78,3 +78,56 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 ~~~
 composer require emmetltd/ifcert
+
+## 初始化客户端
+```
+//请求接口
+use Emmetltd\ifcert\src\Client;
+//查询接口
+use Emmetltd\ifcert\src\Record;
+```
+## 使用
+```
+$client = new Client($apikey_cncert,$sourceCode_cncert,$debug)
+$signle_data = [[
+	'userType'=>'1',
+	'userAttr'=>'3',
+	'userCreateTime'=>'2019-05-06 12:01:56',
+	'userName'	=> '张三',
+	'countries' => '1',
+	'cardType'	=> '1',
+	'userSex'	=> '1',
+	'userIdcard'=>'340403199512111856',
+	'userPhone' => '177194962541',
+        'userList'  => [['userBankAccount'=>'6228480240389521611']],
+]];//个人数据
+$res = $client->userInfoRequest($signle_data,$batchNum);
+echo $res;
+```
+*client 参数说明：*
+> $apikey_cncert：平台密钥
+> $sourceCode_cncert：平台编码
+> $debug：是否开启测试接口  传1会请求测试接口
+
+**具体编码申请和api密钥请参照 https://open.ifcert.org.cn/login**
+*userInfoRequest 参数说明*
+> $signle_data：具体参数请看程序与功能模块
+> $batchNum：批次号，不传会自动生成
+
+## 接口说明
+| 方法名| 功能 
+| --- | --- | 
+|   userInfoRequest  |  用户信息
+   |   scatterInvestRequest  |  散标信息
+   | statusRequest| 散标状态
+|   repayPlanRequest   |   还款计划  |
+|   creditorRequest   |     初始债权
+|     transferProjectRequest |    转让信息
+ |    transferStatusRequest  |     转让状态
+|   underTakeRequest   |     承接转让
+|    transactRequest  |     交易流水
+|    lendProductRequest  |     产品信息
+|    lendProductConfigRequest  |     产品配置
+|   lendParticularsRequest   |     投资明细
+
+
