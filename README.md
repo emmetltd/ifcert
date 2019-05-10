@@ -78,7 +78,7 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 
 ~~~
 composer require emmetltd/ifcert
-
+~~~
 ## 初始化客户端
 ```
 //请求接口
