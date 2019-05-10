@@ -128,6 +128,6 @@ echo $res;
 |    transactRequest  |     交易流水
 |    lendProductRequest  |     产品信息
 |    lendProductConfigRequest  |     产品配置
-|   lendParticularsRequest   |     投资明细
+|   lendParticularsRequest   |     投资明细|
 
 
