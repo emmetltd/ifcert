@@ -130,4 +130,4 @@ echo $res;
 |    lendProductConfigRequest  |     产品配置
 |   lendParticularsRequest   |     投资明细|
 
-
+看云手册已经发布 https://www.kancloud.cn/flyyao/php-sdk/1065186
