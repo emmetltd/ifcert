@@ -1,0 +1,26 @@
+{
+    "name": "emmetltd/ifcert",
+    "description": "emmetltd ifcert",
+    "type": "library",
+	"version":"1.0.0",
+    "keywords": [
+        "ifcert",
+        "sdk",
+        "emmetltd"
+    ],
+    "homepage": "http://www.emmetltd.com",
+    "license": "Apache-2.0",
+    "authors": [
+        {
+            "name": "yaofulai",
+            "email": "115376835@qq.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Emmetltd\\ifcert\\lib\\": "lib/",
+            "Emmetltd\\ifcert\\src\\": "src/",
+            "Emmetltd\\ifcert\\tools\\": "tools/"	
+        }
+    }
+}
