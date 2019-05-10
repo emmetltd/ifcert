@@ -1,6 +1,4 @@
-# ifcert
-
-## 全国网贷机构实时交易数据SDK
+# ifcert 全国网贷机构实时交易数据SDK
 
 * 本SDK 运行最底要求 PHP 版本 5.4 , 建议在 PHP7 上运行以获取最佳性能；
 
@@ -79,7 +77,4 @@ composer config -g repo.packagist composer https://packagist.phpcomposer.com
 > 进入项目根目录下
 
 ~~~
-
-
-
-
+composer require emmetltd/ifcert
